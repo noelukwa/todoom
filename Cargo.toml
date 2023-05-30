@@ -11,6 +11,8 @@ wasm-opt = false
 crate-type = ["cdylib"]
 
 [dependencies]
+libsql-client = { version = "0.26.2", default-features = false, features = ["workers_backend"] }
+sea-query = "0.28.5"
 worker = "0.0.15"
 
 [profile.release]
